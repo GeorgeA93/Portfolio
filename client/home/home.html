@@ -1,4 +1,4 @@
-<div class="section black">
+<div class="section black" ng-style="{ 'height' : ctlr.browserHeight}" id="title">
     <div class="container vertically-center">
         <div class="row">
             <div class="col-md-12">
@@ -16,7 +16,251 @@
     <div class="container vertically-center">
         <div class="row text-center">
             <div class="col-md-12">
-                <i id="down-arrow" class="fa fa-chevron-down"></i>
+                <i id="down-arrow" class="fa fa-chevron-down fa-4x" ng-click="ctlr.goToAnchor('about')"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section white" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center black medium bold">Who the fuck am I?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-xs-5 col-md-5"></div>
+                    <div class="col-xs-2 col-md-2">
+                        <img src="/images/profile.jpg" class="img-responsive img-circle" />
+                    </div>
+                    <div class="col-xs-5 col-md-5"></div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center black small">
+                    Good day!
+                </p>
+                <p class="text-center black small">
+                    Welcome to my page. Here you will find a collection of my work, a blog post or two and some information as to where you can find me.
+                </p>
+                <p class="text-center black small">
+                    As a recent graduate, I landed myself a great job developing software for Hi-Level, a mezzanine floor company that needed a software update!
+                </p>
+                <br />
+                <p class="text-center black small">
+                    Full Stack is where I'm at.
+                </p>
+                <br />
+                <p class="text-center black small">
+                    Insert some mundane text about a 22 year old nerd.
+                </p>
+                <br />
+                <p class="text-center black small">
+                    Oh, you should probably download my app. <a href="https://itunes.apple.com/us/app/odds-on-you/id1031646510?ls=1&mt=8">Odds On You</a>
+                </p>
+                <br />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section blue" id="what-i-know">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center white medium bold">What the fuck do i know?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center white small bold">Well...</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center white small bold">Who cares?</p>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-center white medium bold">Languages, IDE's, Platforms</p>
+                <p class="text-center white small bold">
+                    C, C++, C#, Ojective C, Swift, Java, Visual Basic, R, Javascript, Typescript, Html, CSS, LESS, SASS, PHP, XML, Json,
+                    XCode, Atom, Visual Studio, IntelliJ, Eclipse, R Studio, Notepad++, Sql Server Management Studio, Azure, ASP.Net, PhpMyAdmin,
+                    Parse, App Veyor, Travis CI, Node, Jade, Office, Android SDK, FileZilla, Mono, Xamarin, XNA, jQuery, LibGdx, OpenGL,
+                    SpriteKit, OpenCv, Unity, Gimp, Paint.Net, Inkscape, Phaser, Pixi, Bootstrap, Angular, SignalR.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p class="text-center white medium bold">Other tech shit</p>
+                <p class="text-center white small bold">
+                    Git, SVN, Bitbucket, Team Foundation, Oracle, MVC, Rest, Web Api, Cloud Computing, Windows, Windows Server, Linux, OSX, IOS, Functional,
+                    Procedural, Object Oriented, Source Tree.
+                </p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center white small bold">Anyway, thats all i can remember right now</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section white" id="what-i-have-done">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center black medium bold">What the fuck have i done?</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 80px;">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center black sm">Jobs</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-center black smm">Hi-Level</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center black small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="text-center black smm">University of Reading</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center black small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 80px;">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center black sm">University Projects</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <p class="text-center black smm">Project</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center black small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <p class="text-center black smm">Project</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center black small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <p class="text-center black smm">Project</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center black small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <p class="text-center black smm">Project</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center black small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 80px;">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center black sm">Personal Projects</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <p class="text-center black smm">Project</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center black small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <p class="text-center black smm">Project</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center black small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <p class="text-center black smm">Project</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center black small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <p class="text-center black smm">Project</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center black small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section black" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center white medium bold">How the fuck do we talk?</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top:50px;">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-xs-4 col-md-4 text-center">
+                        <i class="fa fa-github fa-4x"></i>
+                    </div>
+                    <div class="col-xs-4 col-md-4 text-center">
+                        <i class="fa fa-linkedin fa-4x"></i>
+                    </div>
+                    <div class="col-xs-4 col-md-4 text-center">
+                        <i class="fa fa-envelope fa-4x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top:55px;">
+            <div class="col-md-12">
+                <p class="text-center small white">
+                    &copy; George Allen 2015
+                </p>
             </div>
         </div>
     </div>
