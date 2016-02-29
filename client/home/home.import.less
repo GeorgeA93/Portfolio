@@ -1,0 +1,29 @@
+/* Icon animation */
+@-webkit-keyframes bounce {
+  0%      { -webkit-transform: translateY(0); }
+  15%     { -webkit-transform: translateY(-10px); }
+  30%     { -webkit-transform: translateY(0); }
+  100%    { -webkit-transform: translateY(0); }
+}
+@-ms-keyframes bounce {
+  0%      { -ms-transform: translateY(0); }
+  15%     { -ms-transform: translateY(-10px); }
+  30%     { -ms-transform: translateY(0); }
+  100%    { -ms-transform: translateY(0); }
+}
+@keyframes bounce {
+  0%      { transform: translateY(0); }
+  15%     { transform: translateY(-10px); }
+  30%     { transform: translateY(0); }
+  100%    { transform: translateY(0); }
+}
+
+#down-arrow {
+  color: #F4F4F4;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: bounce 2.5s infinite;
+  -ms-animation: bounce 2.5s infinite;
+  animation: bounce 2.5s infinite;
+}

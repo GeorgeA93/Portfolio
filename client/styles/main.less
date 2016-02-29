@@ -1,0 +1,118 @@
+@color1: #2F2933;
+@color2: #01A2A6;
+@color3: #29D9C2;
+@color4: #BDF271;
+@color5: #FFFFA6;
+@color6: #2F2933;
+@color7: #FF6F69;
+
+@offBlack: #0D0D0D;
+@offWhite: #F4F4F4;
+@white: #FFFFFF;
+@black: #000000;
+@red: #D96459;
+@blue: #004358;
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('../fonts/ProximaNova-Semibold.otf');
+}
+
+html, body, h1, h2, h3, h4, p, a {
+  font-family: proxima-nova !important;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: @offBlack;
+  margin: 0;
+  padding: 0;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.ma-main-container {
+  @media (min-width: 400px) {
+    padding-right: 0;
+  }
+}
+
+.vertically-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section {
+  display: block;
+  padding: 60px 0;
+}
+
+.section-red {
+  background-color: @red;
+}
+
+.section-blue {
+  background-color: @blue;
+}
+
+.section-black {
+  background-color: @offBlack;
+}
+
+.section-white {
+  background-color: @offWhite;
+}
+
+p.white {
+  color: @white;
+}
+
+p.black {
+  color: @black;
+}
+
+p.large {
+  font-size: 4em;
+}
+
+p.medium {
+  font-size: 2em;
+}
+
+p.sm {
+  font-size: 1.8em;
+}
+
+p.smm {
+  font-size: 1.3em;
+}
+
+p.small {
+  font-size: 1em;
+}
+
+p.bold {
+  font-weight: bold;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+@import "../home/home.import.less";
+
