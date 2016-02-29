@@ -7,9 +7,28 @@ angular.module('portfolio').config(function ($urlRouterProvider, $stateProvider,
         $stateProvider
             .state('home', {
                 url: '/home',
-                templateUrl: 'client/home/home.html',
-                controllerAs: 'ctlr',
-                controller: 'HomeController'
+                views: {
+                    '': {
+                        templateUrl: 'client/home/home.html',
+                        controllerAs: 'ctlr',
+                        controller: 'HomeController',
+                    },
+                    'title@home': {
+                        templateUrl: 'client/home/title/title.html',
+                    },
+                    'about@home': {
+                        templateUrl: 'client/home/about/about.html',
+                    },
+                    'whatIKnow@home': {
+                        templateUrl: 'client/home/whatIKnow/whatIKnow.html',
+                    },
+                    'experience@home': {
+                        templateUrl: 'client/home/experience/experience.html',
+                    },
+                    'contact@home': {
+                        templateUrl: 'client/home/contact/contact.html',
+                    }
+                }
             })
             .state('blog', {
                 url: '/blog'
