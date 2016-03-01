@@ -5,14 +5,22 @@ angular.module('portfolio').controller('HomeController', ['$scope', '$log', '$re
     function ($scope, $log, $reactive, $window, $anchorScroll, $location) {
         $reactive(this).attach($scope);
 
+        this.jobsPerRow = 3;
+        this.projectsPerRow = 3;
+
         this.browserHeight = $window.innerHeight;
 
         this.helpers({
+
             jobs: () => {
                 return Jobs.find({});
             },
             projects: () => {
                 return Projects.find({});
+            },
+            groupedJobs: () => {
+                const data = Jobs.find({}).fetch();
+                return lodash.chunk(data, this.jobsPerRow);
             }
         });
 

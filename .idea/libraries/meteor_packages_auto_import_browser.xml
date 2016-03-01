@@ -137,6 +137,8 @@
         <item url="file://$USER_HOME$/.meteor/packages/http/1.1.1/web.browser/httpcall_common.js" />
         <item url="file://$USER_HOME$/.meteor/packages/angular_angular/1.4.8/web.browser/angular.js" />
         <item url="file://$USER_HOME$/.meteor/packages/http/1.1.1/web.browser/httpcall_client.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/erasaur_meteor-lodash/4.0.0/web.browser/export.js" />
+        <item url="file://$USER_HOME$/.meteor/packages/erasaur_meteor-lodash/4.0.0/web.browser/lodash/lodash.js" />
         <item url="file://$USER_HOME$/.meteor/packages/angularui_angular-ui-bootstrap/0.13.0/web.browser/packages/angularui_angular-ui-bootstrap.js" />
         <item url="file://$USER_HOME$/.meteor/packages/id-map/1.0.4/web.browser/id-map.js" />
         <item url="file://$USER_HOME$/.meteor/packages/angularui_angular-ui-router/0.2.15/web.browser/packages/angularui_angular-ui-router.js" />
@@ -294,6 +296,8 @@
       <root url="file://$USER_HOME$/.meteor/packages/http/1.1.1/web.browser/httpcall_common.js" />
       <root url="file://$USER_HOME$/.meteor/packages/angular_angular/1.4.8/web.browser/angular.js" />
       <root url="file://$USER_HOME$/.meteor/packages/http/1.1.1/web.browser/httpcall_client.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/erasaur_meteor-lodash/4.0.0/web.browser/export.js" />
+      <root url="file://$USER_HOME$/.meteor/packages/erasaur_meteor-lodash/4.0.0/web.browser/lodash/lodash.js" />
       <root url="file://$USER_HOME$/.meteor/packages/angularui_angular-ui-bootstrap/0.13.0/web.browser/packages/angularui_angular-ui-bootstrap.js" />
       <root url="file://$USER_HOME$/.meteor/packages/id-map/1.0.4/web.browser/id-map.js" />
       <root url="file://$USER_HOME$/.meteor/packages/angularui_angular-ui-router/0.2.15/web.browser/packages/angularui_angular-ui-router.js" />
