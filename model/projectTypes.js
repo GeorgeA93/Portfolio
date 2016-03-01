@@ -1,25 +1,22 @@
 /**
  * Created by georgeallen on 01/03/2016.
  */
-Projects = new Mongo.Collection('projects');
+ProjectTypes = new Mongo.Collection('projectTypes');
 
-Projects.allow({
-    insert: function (userId, project) {
+ProjectTypes.allow({
+    insert: function (userId, projectType) {
         return userId;
     },
-    update: function (userId, project, fields, modifier) {
+    update: function (userId, projectType, fields, modifier) {
         return userId;
     },
-    remove: function (userId, project) {
+    remove: function (userId, projectType) {
         return userId
     }
 });
 
-Projects.attachSchema(new SimpleSchema({
-    title: {type: String, label: 'Title'},
-    shortDescription: {type: String, label: 'Short Description'},
-    longDescription: {type: String, label: 'Long Description'},
-    projectTypeId: {type: String, regEx: SimpleSchema.RegEx.Id, label: 'Project Type'},
+ProjectTypes.attachSchema(new SimpleSchema({
+    description: {type: String, label: 'Description'},
     createdAt: {
         type: Date,
         label: 'Created',
@@ -47,10 +44,3 @@ Projects.attachSchema(new SimpleSchema({
         optional: true
     }
 }));
-
-Projects.helpers({
-    projectType: function () {
-        return ProjectTypes.findOne(this.projectType);
-    }
-});
-

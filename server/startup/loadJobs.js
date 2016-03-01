@@ -3,21 +3,19 @@
  */
 Meteor.startup(function () {
     if (Jobs.find().count() === 0) {
-        var jobs = [
-            {
-                'title': 'Hi-Level',
-                'shortDescription': 'A short description of the job',
-                'longDescription': 'A long description of the job'
-            },
-            {
-                'title': 'University of Reading',
-                'shortDescription': 'A short description of the job',
-                'longDescription': 'A long description of the job'
-            }
-        ];
 
-        for (var i = 0; i < jobs.length; i++) {
-            Jobs.insert(jobs[i]);
-        }
+        Jobs.insert({
+            _id: Random.id(),
+            title: 'Hi-Level',
+            shortDescription: 'A short description of the job',
+            longDescription: 'A long description of the job'
+        });
+
+        Jobs.insert({
+            _id: Random.id(),
+            title: 'University of Reading',
+            shortDescription: 'A short description of the job',
+            longDescription: 'A long description of the job'
+        });
     }
 });
