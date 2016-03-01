@@ -35,13 +35,51 @@ angular.module('portfolio').config(function ($urlRouterProvider, $stateProvider,
                 templateUrl: 'client/blog/blog.html',
                 controllerAs: 'ctlr',
                 controller: 'BlogController'
+            })
+            .state('data', {
+                url: '/data',
+                templateUrl: 'client/data/dataDashboard/dataDashboard.html',
+                controllerAs: 'ctlr',
+                controller: 'DataDashboardController',
+                resolve: {
+                    currentUser: ($q) => {
+                        if (Meteor.userId() == null) {
+                            return $q.reject('AUTH_REQUIRED');
+                        }
+                        else {
+                            return $q.resolve();
+                        }
+                    }
+                }
+            })
+            .state('dataTable', {
+                url: '/data/table?entity?',
+                templateUrl: 'client/data/dataTable/dataTable.html',
+                controllerAs: 'ctlr',
+                controller: 'DataTableController',
+                resolve: {
+                    currentUser: ($q) => {
+                        if (Meteor.userId() == null) {
+                            return $q.reject('AUTH_REQUIRED');
+                        }
+                        else {
+                            return $q.resolve();
+                        }
+                    }
+                }
+            })
+            .state('login', {
+                url: '/login',
+                templateUrl: 'client/login/login.html',
+                controllerAs: 'ctlr',
+                controller: 'LoginController'
             });
         $urlRouterProvider.otherwise("/home");
     })
     .run(function ($rootScope, $state) {
         $rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState, fromParams, error) {
             if (error === 'AUTH_REQUIRED') {
-                $state.go('home');
+                $state.go('login');
             }
         });
     });

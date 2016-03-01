@@ -2,6 +2,18 @@
  * Created by georgeallen on 01/03/2016.
  */
 Meteor.startup(function () {
+
+    Accounts.config({
+        forbidClientAccountCreation : true
+    });
+
+    if(Meteor.users.find().count() == 0){
+        Accounts.createUser({
+            email: 'george.allen93@outlook.com',
+            password: '1pullman'
+        });
+    }
+
     if (Jobs.find().count() === 0) {
         Jobs.insert({
             title: 'Hi-Level',
