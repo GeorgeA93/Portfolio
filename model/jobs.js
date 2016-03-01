@@ -1,7 +1,7 @@
 /**
  * Created by georgeallen on 29/02/2016.
  */
-Jobs = new Mongo.Collection('jobs');
+Jobs = new Mongo.Collection('jobs', {idGeneration: 'MONGO'});
 
 Jobs.allow({
     insert: function (userId, job) {

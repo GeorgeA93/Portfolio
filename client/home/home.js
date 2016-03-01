@@ -11,21 +11,22 @@ angular.module('portfolio').controller('HomeController', ['$scope', '$log', '$re
         this.browserHeight = $window.innerHeight;
 
         this.helpers({
-
-            jobs: () => {
-                return Jobs.find({});
-            },
             projects: () => {
                 return Projects.find({});
             },
             groupedJobs: () => {
                 const data = Jobs.find({}).fetch();
                 return lodash.chunk(data, this.jobsPerRow);
+            },
+            groupedPersonalProjects: () => {
+                //const data = Projects.find({projectTypeId: {$eq: 'Personal'}}).fetch();
+                //return lodash.chunk(data, this.projectsPerRow);
             }
         });
 
         this.subscribe('jobs');
         this.subscribe('projects');
+        this.subscribe('projectTypes');
 
         $(window).on("resize.doResize", function () {
             this.browserHeight = $window.innerHeight;

@@ -1,7 +1,7 @@
 /**
  * Created by georgeallen on 01/03/2016.
  */
-Projects = new Mongo.Collection('projects');
+Projects = new Mongo.Collection('projects', {idGeneration: 'MONGO'});
 
 Projects.allow({
     insert: function (userId, project) {
@@ -19,7 +19,7 @@ Projects.attachSchema(new SimpleSchema({
     title: {type: String, label: 'Title'},
     shortDescription: {type: String, label: 'Short Description'},
     longDescription: {type: String, label: 'Long Description'},
-    projectTypeId: {type: String, regEx: SimpleSchema.RegEx.Id, label: 'Project Type'},
+    projectTypeId: {type: String, label: 'Project Type'},
     createdAt: {
         type: Date,
         label: 'Created',

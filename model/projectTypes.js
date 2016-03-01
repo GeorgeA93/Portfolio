@@ -1,7 +1,7 @@
 /**
  * Created by georgeallen on 01/03/2016.
  */
-ProjectTypes = new Mongo.Collection('projectTypes');
+ProjectTypes = new Mongo.Collection('projectTypes', {idGeneration: 'MONGO'});
 
 ProjectTypes.allow({
     insert: function (userId, projectType) {
