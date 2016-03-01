@@ -27,5 +27,4 @@ less
 angularui:angular-ui-bootstrap
 dburles:mongo-collection-instances
 dburles:collection-helpers
-random
 erasaur:meteor-lodash
