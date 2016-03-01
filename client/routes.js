@@ -31,7 +31,10 @@ angular.module('portfolio').config(function ($urlRouterProvider, $stateProvider,
                 }
             })
             .state('blog', {
-                url: '/blog'
+                url: '/blog',
+                templateUrl: 'client/blog/blog.html',
+                controllerAs: 'ctlr',
+                controller: 'BlogController'
             });
         $urlRouterProvider.otherwise("/home");
     })
